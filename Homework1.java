@@ -13,7 +13,7 @@ public class Homework1 {
     private static int getAge(Scanner sc) {
         try {
             System.out.println("Enter your age");
-            String string2 = sc.nextLine();
+            String name = sc.nextLine();
             return Integer.parseInt(string2);
         } catch (NumberFormatException e) {
             System.out.println("Age should contain only letters");
