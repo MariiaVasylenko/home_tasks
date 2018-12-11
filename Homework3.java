@@ -11,17 +11,15 @@ public class Homework3 {
         int[] myArray = new int[20];
         int i = 0;
         int pairCount = 0;
-        while (i < myArray.length) {
+        for (i=0; i < myArray.length; i++) {
             myArray[i] = getInt(s);
             if (myArray[i] % 2 == 0) pairCount++;
-            i++;
         }
         int[] pairArray = new int[pairCount];
         int[] unPairArray = new int[myArray.length - pairCount];
-        i = 0;
         int pairIndex = 0;
         int unpairIndex = 0;
-        while (i < myArray.length) {
+        for ( i = 0;i < myArray.length;i++) {
             if (myArray[i] % 2 == 0) {
                 pairArray[pairIndex] = myArray[i];
                 pairIndex++;
@@ -29,19 +27,18 @@ public class Homework3 {
                 unPairArray[unpairIndex] = myArray[i];
                 unpairIndex++;
             }
-            i++;
+
         }
         System.out.println("pair");
-        i = 0;
-        while (i < pairArray.length) {
+
+        for (i = 0;i < pairArray.length; i++) {
             System.out.println(pairArray[i]);
-            i++;
+
         }
         System.out.println("unpair");
-        i = 0;
-        while (i < unPairArray.length) {
+
+        for (i = 0; i < unPairArray.length; i++) {
             System.out.println(unPairArray[i]);
-            i++;
         }
 
     }
